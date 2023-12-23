@@ -1,0 +1,714 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+    --primary_bgColor: #1c1e53;
+    --secondary__bgColor: #f4f6fc;
+    --menu__color: #bbbbcb;
+    --white: #fff;
+    --blue: #2405f2;
+    --primary__textColor: #282938;
+    --Yellow: #fcd980;
+    --secondary__textColor: #282938b3;
+    --popins: "Poppins", sans-serif;
+}
+
+/* =====================
+    common css start
+========================= */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+    font-family: var(--popins);
+}
+
+ul,
+ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+img {
+    vertical-align: middle;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+span,
+p,
+img,
+div {
+    padding: 0;
+    margin: 0;
+}
+
+/* =====================
+    common css end
+========================= */
+
+/* =====================
+    nav css start
+========================= */
+.navMain {
+    background: var(--primary_bgColor);
+    padding: 16px 0 20px;
+}
+
+.menuLink {
+    color: var(--menu__color);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.menuLink:hover {
+    color: var(--white);
+}
+.cmnBtn {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 14px 44px;
+    border: 2px solid rgba(244, 246, 252, 0.2);
+    border-radius: 35px;
+    background: transparent;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+    margin-left: 30px;
+}
+.cmnBtn:hover {
+    background: var(--white);
+    border: 2px solid var(--white);
+    color: var(--primary__textColor);
+}
+
+/* =====================
+    nav css end
+========================= */
+
+/* =====================
+    banner css start
+========================= */
+#banner_part {
+    padding: 130px 0 128px;
+    background: var(--primary_bgColor);
+}
+
+.bannerTextArea__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 54px;
+    color: var(--white);
+    max-width: 580px;
+}
+.bannerTextArea__summary {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 20px;
+    margin-bottom: 44px;
+    max-width: 510px;
+}
+.viewPart__Btn {
+    color: #1b1c2b;
+    font-size: 18px;
+    padding: 16px 56px;
+    font-weight: 600;
+    border-radius: 41px;
+    background: #fcd980;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.viewPart__Btn:hover {
+    background: #916800;
+    color: var(--white);
+}
+
+.viewPart__pricing {
+    color: var(--white, #fff);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 500;
+}
+.viewPart__pricing i {
+    margin-left: 16px;
+}
+/* =====================
+    banner css end
+========================= */
+
+/* =====================
+    work css start
+========================= */
+#work_part {
+    padding: 128px 0;
+    background: var(--secondary__bgColor);
+}
+
+.common__title {
+    color: var(--primary__textColor, #282938);
+    font-family: var(--popins);
+    font-size: 48px;
+    font-weight: 600;
+}
+.workLeft--title {
+    margin-bottom: 16px;
+}
+.workLeft__summaryh {
+    color: var(--primary__textColor);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    max-width: 350px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+.workLeft__btn {
+    color: var(--blue);
+    font-family: var(--popins);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+.workLeft__btn i {
+    margin-left: 10px;
+}
+.workItem__title {
+    margin: 16px 0 8px;
+    color: var(--primary__textColor, #282938);
+    font-family: var(--popins);
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.workItem__summary {
+    color: var(--primary__textColor, #282938);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 0.7;
+    line-height: 28px;
+}
+
+/* =====================
+    work css end
+========================= */
+
+/* =====================
+    project css start
+========================= */
+#project__part {
+    padding: 128px 0;
+    background: var(--white);
+}
+
+.project__view {
+    color: var(--primary__textColor);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 500;
+}
+.project__view i {
+    margin-left: 16px;
+}
+
+.overlayBig {
+    left: -50%;
+    width: 45%;
+    cursor: pointer;
+    background: linear-gradient(
+        329deg,
+        #1c1e53 -10.96%,
+        rgba(28, 30, 83, 0.42) 103.96%
+    );
+    padding: 300px 35px 0 48px;
+    transition: ease-in-out 0.4s;
+    -webkit-transition: ease-in-out 0.4s;
+    -moz-transition: ease-in-out 0.4s;
+    -ms-transition: ease-in-out 0.4s;
+    -o-transition: ease-in-out 0.4s;
+}
+.projectBig:hover .overlayBig {
+    left: 0;
+}
+
+.overlayBig__title {
+    color: var(--white, #fff);
+    font-family: var(--popins);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 16px;
+    line-height: 36px;
+}
+
+.overlayBig__summary {
+    color: var(--white, #fff);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 40px;
+    line-height: 28px;
+    opacity: 0.8;
+}
+
+.overlayBig__btn {
+    color: var(--Yellow, #fcd980);
+
+    /* Body 2 */
+    font-family: var(--popins);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+}
+.overlayBig__btn i {
+    margin-left: 16px;
+}
+
+.overlaySmall {
+    background: linear-gradient(
+        329deg,
+        #1c1e53 -10.96%,
+        rgba(28, 30, 83, 0.42) 103.96%
+    );
+    padding: 130px 70px 0 56px;
+    opacity: 0;
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.projectSmall:hover .overlaySmall {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* =====================
+    project css end
+========================= */
+/* =====================
+    feature css start
+========================= */
+#feature_part {
+    padding: 128px 0;
+    background: var(--secondary__bgColor);
+}
+.featureHeading__heading {
+    color: var(--primary__textColor, #282938);
+    font-family: var(--popins);
+    font-size: 16px;
+    font-weight: 500;
+}
+.featureHeading--title {
+    max-width: 630px;
+    line-height: 64px;
+}
+.featureItem {
+    padding: 53px 33px 48px 48px;
+    background: var(--white);
+    transition: all linear 0.3s;
+    -webkit-transition: all linear 0.3s;
+    -moz-transition: all linear 0.3s;
+    -ms-transition: all linear 0.3s;
+    -o-transition: all linear 0.3s;
+}
+.featureItem__title {
+    color: var(--primary__textColor, #282938);
+    font-size: 24px;
+    font-weight: 500;
+}
+.featureItem__summary {
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    opacity: 0.7;
+    font-weight: 400;
+    line-height: 28px;
+}
+.featureItem:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* =====================
+    feature css end
+========================= */
+/* =====================
+    client css start
+========================= */
+#client_part {
+    padding: 130px 0;
+    background: rgba(244, 246, 252, 0.5);
+}
+.commonSmall__title {
+    color: var(--primary__textColor, #282938);
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 56px;
+}
+.clientHeading--title {
+    max-width: 325px;
+    margin-bottom: 16px;
+}
+.clientHeading__summary {
+    color: var(--primary__textColor, #282938);
+    max-width: 325px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.clientcomment__title {
+    color: var(--primary__textColor, #282938);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+.clientInfo__name {
+    color: var(--primary__textColor, #282938);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+.clientInfo__role {
+    color: var(--primary__textColor, #282938);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/* =====================
+    client css end
+========================= */
+
+/* =====================
+    faq css start
+========================= */
+#faq_part {
+    padding: 128px 0;
+}
+.faqLeft--title {
+    max-width: 328px;
+}
+.faqLeft__link {
+    color: var(--blue, #2405f2);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: var(--white);
+    box-shadow: none;
+}
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordian__list{
+    margin-right: 60px;
+    width: 35px;
+    color: var(--blue, #2405F2);
+    font-size: 24px;
+    font-weight: 500;
+}
+.accordion-button{
+    color: var(--primary__textColor, #282938);
+    font-size: 24px;
+    font-weight: 500;
+    padding: 25px 32px;
+}
+.accordion-body {
+	color: var(--primary__textColor, #282938);
+	font-size: 18px;
+	opacity: 0.87;
+	font-weight: 500;
+	line-height: 32px;
+	padding: 15px 100px 48px 115px;
+}
+
+
+
+
+
+
+
+
+
+
+/* =====================
+    faq css end
+========================= */
+/* =====================
+    inquiry css start
+========================= */
+
+#inquiry_part {
+    padding-bottom: 128px;
+}
+
+.inquiryOverlay {
+    background: rgba(28, 30, 83, 0.5);
+    padding: 96px 90px 0 96px;
+}
+.inquiryOverlay__title {
+    color: var(--white, #fff);
+    font-size: 54px;
+    font-weight: 600;
+    line-height: 74px;
+}
+.inquiryOverlay__summary {
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+}
+.inquiryRight {
+    padding: 96px 96px 0 96px;
+    background: var(--primary_bgColor);
+}
+.inquiryRight__title {
+    color: var(--white);
+    font-size: 32px;
+    font-weight: 500;
+}
+.inquiryRight__summary {
+    color: #f4f6fc;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 432px;
+}
+
+.input {
+    padding: 18px 0 18px 32px;
+    background: transparent;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.05);
+    color: var(--white);
+}
+.input::placeholder {
+    color: #f4f6fc;
+    font-size: 16px;
+    opacity: 0.5;
+    font-weight: 400;
+    text-transform: capitalize;
+    font-family: var(--popins);
+}
+.input:focus {
+    box-shadow: 0px 0px 1px 0px #fff;
+}
+.inquiryRight__btn1 {
+    color: #1b1c2b;
+    font-size: 18px;
+    background: var(--Yellow);
+    font-weight: 600;
+    padding: 15px 0;
+    border: 0;
+    border-radius: 41px;
+    -webkit-border-radius: 41px;
+    -moz-border-radius: 41px;
+    -ms-border-radius: 41px;
+    -o-border-radius: 41px;
+    transition: all linear 0.2s;
+    -webkit-transition: all linear 0.2s;
+    -moz-transition: all linear 0.2s;
+    -ms-transition: all linear 0.2s;
+    -o-transition: all linear 0.2s;
+}
+.inquiryRight__btn1:hover {
+    background: #916800;
+    color: var(--white);
+}
+
+.inquiryRight__btn2 {
+    text-align: center;
+    background: transparent;
+    border: none;
+    color: var(--white, #fff);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* =====================
+    inquiry css end
+========================= */
+/* =====================
+    blog css start
+========================= */
+#blog_part {
+    padding-bottom: 128px;
+}
+.blogItem__date {
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    font-weight: 500;
+}
+.blogItem__title {
+    color: var(--primary__textColor, #282938);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.blogItem__summary {
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.blogItem__link {
+    color: var(--primary__textColor);
+    font-size: 16px;
+    font-weight: 500;
+}
+/* =====================
+    blog css end
+========================= */
+
+/* =====================
+    footer css end
+========================= */
+#footer_part {
+    padding-top: 96px;
+    background: var(--primary_bgColor);
+}
+.footerLeft__summary {
+    color: var(--white, #fff);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 28px;
+    max-width: 400px;
+    opacity: 0.8;
+}
+.contact {
+    background-color: var(--Yellow);
+}
+.contactName {
+    color: var(--primary__textColor, #282938);
+    font-size: 18px;
+    margin-top: 5px;
+    font-weight: 500;
+    line-height: 32px;
+}
+.contactInfo {
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+.footerRight__title {
+    color: var(--white);
+    font-size: 48px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.footerRight__summary {
+    color: #f4f6fc;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    max-width: 400px;
+    opacity: 0.8;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+.footerIcon {
+    margin-top: 30px;
+    display: flex;
+}
+.footerIcon__item {
+    width: 40px;
+    height: 40px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    transition: all linear 0.2s;
+    font-size: 18px;
+}
+.footerIcon__item:hover {
+    transform: translateY(-10px);
+}
+.facebook--icon {
+    background-color: #0165e1;
+    color: #fff;
+}
+.twitter--icon {
+    background-color: #1da1f2;
+    color: #fff;
+}
+.linkedin--icon {
+    background-color: #0a66c2;
+    color: #fff;
+}
+.instagram--icon {
+    background: linear-gradient(
+        45deg,
+        #f09433 0%,
+        #e6683c 25%,
+        #dc2743 50%,
+        #cc2366 75%,
+        #bc1888 100%
+    );
+    color: #fff;
+}
+/* =====================
+    footer css end
+========================= */
+/* =====================
+    coppy css start
+========================= */
+#coppy_part{
+    padding: 32px 0;
+}
+.coppyTitle{
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    font-weight: 500;
+}
+.coppyLink{
+    color: var(--primary__textColor, #282938);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+
+/* =====================
+    coppy css end
+========================= */
